@@ -1,31 +1,310 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>IgrejaHub | Conectando pessoas e igrejas</title>
+    <meta name="description"
+        content="Igreja Batista Maanaim — Um lugar para pertencer, crescer na fé e viver em comunhão.">
 
-    <link rel="stylesheet" href="style.css">
+    <title>Igreja Batista Maanaim | IgrejaHub</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>IgrejaHub</h1>
-        <p>Conectando pessoas e igrejas</p>
+    <!-- Header -->
+    <header class="header">
+
+        <div class="container header-content">
+
+            <a href="index.html" class="logo">
+                <img src="assets/icons/icone-de-livro-biblico.jpg" alt="Símbolo cristão" class="logo-icon">
+                <span>IgrejaHub</span>
+            </a>
+
+            <nav class="nav" aria-label="Navegação principal">
+
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre nós</a>
+                <a href="#missoes">Missões</a>
+                <a href="#cultos">Cultos</a>
+                <a href="#eventos">Eventos</a>
+                <a href="#contato">Contato</a>
+
+            </nav>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="main-nav">
+                ☰
+            </button>
+
+        </div>
+
     </header>
 
+    <!-- Conteúdo principal -->
     <main>
-        <!-- Conteúdo da aplicação será desenvolvido aqui -->
+
+        <!-- Banner de boas-vindas -->
+        <section class="hero" id="inicio">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <p class="hero-label">
+                        IGREJA BATISTA MAANAIM
+                    </p>
+
+                    <h1>
+                        Seja bem-vindo à
+                        <span>nossa igreja.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Um lugar para pertencer, crescer na fé
+                        e viver em comunhão.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a href="#sobre" class="btn btn-primary">
+                            Conheça nossa igreja
+                        </a>
+
+                        <a href="#cultos" class="btn btn-secondary">
+                            Horários de cultos
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-decoration" aria-hidden="true">
+
+                    <div class="decoration-circle"></div>
+
+                    <div class="decoration-cross">
+                        ✝
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Sobre a igreja -->
+        <section class="section" id="sobre">
+
+            <div class="container section-content">
+
+                <p class="section-label">SOBRE NÓS</p>
+
+                <h2>
+                    Uma comunidade de fé,
+                    esperança e amor.
+                </h2>
+
+                <p>
+                    A Igreja Batista Maanaim é uma comunidade
+                    dedicada a compartilhar a fé, fortalecer
+                    famílias e caminhar juntos.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Missões -->
+        <section id="missoes" class="missions">
+            <div class="section-header">
+                <span class="section-tag">Missões</span>
+                <h2>Levando esperança além das fronteiras</h2>
+                <p>
+                    Conheça os projetos e missionários apoiados pela
+                    Igreja Batista Maanaim.
+                </p>
+            </div>
+
+            <div class="missions-grid">
+
+                <!-- Missões no Brasil -->
+                <article class="mission-card">
+                    <div class="mission-image">
+                        <img src="assets/images/missions/brasil/missao-brasil.jpg" alt="Missões no Brasil">
+                    </div>
+
+                    <div class="mission-content">
+                        <span class="mission-category">Brasil</span>
+
+                        <h3>Missões no Brasil</h3>
+
+                        <p>
+                            Conheça os projetos e missionários que atuam
+                            levando o evangelho e desenvolvendo trabalhos
+                            em diferentes regiões do Brasil.
+                        </p>
+
+                        <a href="pages/missoes.html" class="mission-button">
+                            Conhecer os projetos
+                            <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- Missões Internacionais -->
+                <article class="mission-card">
+                    <div class="mission-image">
+                        <img src="assets/images/missions/internacional/missao-internacional.jpg"
+                            alt="Missões internacionais">
+                    </div>
+
+                    <div class="mission-content">
+                        <span class="mission-category">Internacional</span>
+
+                        <h3>Missões Internacionais</h3>
+
+                        <p>
+                            Descubra os trabalhos missionários apoiados
+                            pela igreja em diferentes países e culturas.
+                        </p>
+
+                        <a href="pages/missoes.html" class="mission-button">
+                            Conhecer os projetos
+                            <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- Apoio Missionário -->
+                <article class="mission-card">
+                    <div class="mission-image">
+                        <img src="assets/images/missions/apoio-missao.jpg" alt="Apoio missionário">
+                    </div>
+
+                    <div class="mission-content">
+                        <span class="mission-category">Apoio</span>
+
+                        <h3>Apoio Missionário</h3>
+
+                        <p>
+                            Entenda como a Igreja Batista Maanaim apoia
+                            missionários e projetos que levam esperança
+                            para diferentes lugares.
+                        </p>
+
+                        <a href="pages/missoes.html" class="mission-button">
+                            Conhecer os projetos
+                            <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Horários de cultos -->
+        <section class="section section-light" id="cultos">
+
+            <div class="container section-content">
+
+                <p class="section-label">PROGRAMAÇÃO</p>
+
+                <h2>Horários de cultos</h2>
+
+                <div class="schedule-grid">
+
+                    <div class="schedule-card">
+
+                        <h3>Culto de celebração</h3>
+
+                        <p>Domingo</p>
+
+                        <strong>19h00</strong>
+
+                    </div>
+
+                    <div class="schedule-card">
+
+                        <h3>Culto de oração</h3>
+
+                        <p>Quarta-feira</p>
+
+                        <strong>20h00</strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Eventos -->
+        <section class="section" id="eventos">
+
+            <div class="container section-content">
+
+                <p class="section-label">AGENDA</p>
+
+                <h2>Próximos eventos</h2>
+
+                <p>
+                    Em breve, confira aqui os eventos,
+                    retiros e encontros da nossa igreja.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Contato -->
+        <section class="section section-light" id="contato">
+
+            <div class="container section-content">
+
+                <p class="section-label">FALE CONOSCO</p>
+
+                <h2>Entre em contato</h2>
+
+                <p>
+                    Em breve, você poderá encontrar aqui
+                    os canais oficiais da Igreja Batista Maanaim.
+                </p>
+
+            </div>
+
+        </section>
+
     </main>
 
-    <footer>
-        <p>&copy; 2026 IgrejaHub</p>
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                &copy; <span id="current-year">2026</span>
+                Igreja Batista Maanaim.
+                Todos os direitos reservados.
+            </p>
+
+            <p class="footer-brand">
+                Desenvolvido com IgrejaHub.
+            </p>
+
+        </div>
+
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>
