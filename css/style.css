@@ -82,13 +82,13 @@ button {
     text-align: center;
 }
 
-.section-label {
+/* .section-label {
     color: var(--color-accent-dark);
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 2px;
     margin-bottom: 12px;
-}
+} */
 
 .section h2 {
     color: var(--color-primary);
@@ -1089,7 +1089,17 @@ button {
 .section-label {
     color: #c8a45d;
 
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.section-donation {
+    color: #c8a45d;
+
+    font-size: 1.5rem;
     font-weight: 700;
 
     letter-spacing: 1.5px;
