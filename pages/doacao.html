@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Doação via Pix | IgrejaHub</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+
+            <a href="../index.html" class="logo">
+                <img src="../assets/icons/ichthys-golden.png" alt="Símbolo cristão" class="logo-icon">
+
+                <span>IgrejaHub</span>
+            </a>
+
+            <nav class="nav">
+                <a href="../index.html">Início</a>
+                <a href="missoes.html">Missões</a>
+                <a href="../index.html#contato">Contato</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="donation-section">
+
+            <div class="donation-container">
+
+                <span class="section-label">
+                    Apoie esta missão
+                </span>
+
+                <h1>Faça sua doação via Pix</h1>
+
+                <p class="donation-description">
+                    Sua contribuição ajuda a fortalecer projetos missionários
+                    e apoiar famílias que dedicam suas vidas ao serviço.
+                </p>
+
+                <div class="donation-card">
+
+                    <h2 id="donation-title">
+                        Doação para a missão
+                    </h2>
+
+                    <p id="donation-project">
+                        IgrejaHub
+                    </p>
+
+                    <div class="pix-qr-code">
+                        <img src="../assets/images/hero/icons/qrcodeJPEG.jpeg" alt="QR Code para doação via Pix">
+                    </div>
+
+                    <p class="pix-instruction">
+                        Aponte a câmera do aplicativo do seu banco
+                        para o QR Code acima.
+                    </p>
+
+                    <div class="pix-copy-section">
+
+                        <label for="pix-code">
+                            Código Pix copia e cola
+                        </label>
+
+                        <textarea id="pix-code" readonly
+                            aria-label="Código Pix copia e cola">00020126360014BR.GOV.BCB.PIX0114+55119580485135204000053039865802BR5915Eduardo Stegani6009SAO PAULO62140510kaEtZHwQng6304F261</textarea>
+
+                        <button type="button" id="copy-pix-button" class="hero-button">
+                            Copiar código Pix
+                        </button>
+
+                        <p id="copy-message" class="copy-message" aria-live="polite"></p>
+
+                    </div>
+
+                    <p class="donation-warning">
+                        Confira o destinatário no aplicativo do seu banco
+                        antes de confirmar qualquer pagamento.
+                    </p>
+
+                </div>
+
+                <a href="missoes.html" class="support-secondary-button">
+                    Voltar para missões
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>
+            © <span id="current-year"></span> IgrejaHub.
+            Todos os direitos reservados.
+        </p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

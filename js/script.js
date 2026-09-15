@@ -1,4 +1,3 @@
-
 /**
  * IgrejaHub
  * Igreja Batista Maanaim
@@ -13,18 +12,22 @@
 const menuToggle = document.getElementById("menu-toggle");
 const nav = document.querySelector(".nav");
 
-menuToggle.addEventListener("click", () => {
+if (menuToggle && nav) {
 
-    const isOpen = nav.classList.toggle("active");
+    menuToggle.addEventListener("click", () => {
 
-    menuToggle.setAttribute("aria-expanded", isOpen);
+        const isOpen = nav.classList.toggle("active");
 
-    menuToggle.setAttribute(
-        "aria-label",
-        isOpen ? "Fechar menu" : "Abrir menu"
-    );
+        menuToggle.setAttribute("aria-expanded", isOpen);
 
-});
+        menuToggle.setAttribute(
+            "aria-label",
+            isOpen ? "Fechar menu" : "Abrir menu"
+        );
+
+    });
+
+}
 
 
 // ========================================
@@ -37,11 +40,18 @@ navLinks.forEach((link) => {
 
     link.addEventListener("click", () => {
 
-        nav.classList.remove("active");
+        if (nav && menuToggle) {
 
-        menuToggle.setAttribute("aria-expanded", "false");
+            nav.classList.remove("active");
 
-        menuToggle.setAttribute("aria-label", "Abrir menu");
+            menuToggle.setAttribute("aria-expanded", "false");
+
+            menuToggle.setAttribute(
+                "aria-label",
+                "Abrir menu"
+            );
+
+        }
 
     });
 
@@ -54,7 +64,11 @@ navLinks.forEach((link) => {
 
 const currentYear = document.getElementById("current-year");
 
-currentYear.textContent = new Date().getFullYear();
+if (currentYear) {
+
+    currentYear.textContent = new Date().getFullYear();
+
+}
 
 
 // ========================================
@@ -62,4 +76,117 @@ currentYear.textContent = new Date().getFullYear();
 // ========================================
 
 console.log("IgrejaHub iniciado com sucesso!");
-console.log("Igreja Batista Maanaim — Home carregada!");
+
+
+// ========================================
+// Página de doação
+// ========================================
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const copyPixButton =
+        document.getElementById("copy-pix-button");
+
+    const pixCode =
+        document.getElementById("pix-code");
+
+    const copyMessage =
+        document.getElementById("copy-message");
+
+
+    // Verifica se estamos na página de doação
+
+    if (
+        copyPixButton &&
+        pixCode &&
+        copyMessage
+    ) {
+
+        console.log("Página de doação carregada.");
+        console.log("Botão Pix encontrado:", copyPixButton);
+
+
+        copyPixButton.addEventListener("click", function () {
+
+            console.log("Botão Copiar código Pix clicado.");
+
+
+            const code = pixCode.value.trim();
+
+
+            if (!code) {
+
+                copyMessage.textContent =
+                    "O código Pix está vazio.";
+
+                return;
+
+            }
+
+
+            // Seleciona o código Pix
+
+            pixCode.focus();
+            pixCode.select();
+            pixCode.setSelectionRange(
+                0,
+                pixCode.value.length
+            );
+
+
+            try {
+
+                const copied =
+                    document.execCommand("copy");
+
+
+                console.log(
+                    "Resultado da cópia:",
+                    copied
+                );
+
+
+                if (copied) {
+
+                    copyMessage.textContent =
+                        "Código Pix copiado com sucesso!";
+
+                    copyPixButton.textContent =
+                        "Código copiado!";
+
+
+                    setTimeout(function () {
+
+                        copyPixButton.textContent =
+                            "Copiar código Pix";
+
+                        copyMessage.textContent = "";
+
+                    }, 3000);
+
+
+                } else {
+
+                    copyMessage.textContent =
+                        "Não foi possível copiar o código Pix.";
+
+                }
+
+
+            } catch (error) {
+
+                console.error(
+                    "Erro ao copiar o código Pix:",
+                    error
+                );
+
+                copyMessage.textContent =
+                    "Erro ao copiar. Use Ctrl + C.";
+
+            }
+
+        });
+
+    }
+
+});
