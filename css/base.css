@@ -1,0 +1,221 @@
+/* IgrejaHub - Estilos globais */
+
+/* ========================================
+   IgrejaHub
+   Igreja Batista Maanaim
+   Estilos principais
+======================================== */
+
+
+/* ========================================
+   Variáveis globais
+======================================== */
+
+:root {
+    --color-primary: #172a46;
+    --color-primary-light: #243d60;
+    --color-accent: #d9b878;
+    --color-accent-dark: #b99555;
+
+    --color-background: #ffffff;
+    --color-background-light: #f5f7fa;
+
+    --color-text: #1e293b;
+    --color-text-light: #64748b;
+    --color-white: #ffffff;
+
+    --font-primary: Arial, Helvetica, sans-serif;
+
+    --container-width: 1180px;
+}
+
+
+/* ========================================
+   Reset
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+
+/* ========================================
+   Classes reutilizáveis
+======================================== */
+
+.container {
+    width: 90%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.section {
+    padding: 90px 0;
+}
+
+.section-light {
+    background-color: var(--color-background-light);
+}
+
+.section-content {
+    text-align: center;
+}
+
+/* .section-label {
+    color: var(--color-accent-dark);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+} */
+
+.section h2 {
+    color: var(--color-primary);
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.section p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: var(--color-text-light);
+}
+
+
+/* ========================================
+   Header
+======================================== */
+
+.header {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    position: relative;
+    z-index: 10;
+}
+
+.header-content {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.logo-icon {
+    width: 45px;
+    height: 45px;
+    display: block;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav a {
+    font-size: 14px;
+    color: #dbe4f0;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: var(--color-accent);
+}
+
+.menu-toggle {
+    display: none;
+    border: none;
+    background: transparent;
+    color: var(--color-white);
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* ========================================
+   Botões
+======================================== */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+}
+
+.btn-primary:hover {
+    background-color: #e6c98f;
+}
+
+.btn-secondary {
+    border: 1px solid #8da0b8;
+    color: var(--color-white);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ========================================
+   Footer
+======================================== */
+
+.footer {
+    background-color: #101e32;
+    color: #b9c6d6;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 13px;
+}
+
+.footer-brand {
+    margin-top: 5px;
+    color: #8091a8;
+}

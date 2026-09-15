@@ -1,0 +1,194 @@
+/* IgrejaHub - Página de doação */
+
+/* ================= */
+/* PÁGINA DE DOAÇÃO  */
+/* ================= */
+
+.donation-section {
+    padding: 90px 8%;
+
+    background-color: #f8f9fb;
+}
+
+.donation-container {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.donation-container h1 {
+    margin: 14px 0 18px;
+
+    color: #0d1b2a;
+
+    font-size: 2.5rem;
+}
+
+.donation-description {
+    margin-bottom: 35px;
+
+    color: #666;
+
+    line-height: 1.8;
+}
+
+.donation-card {
+    padding: 35px 28px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e8ebf0;
+    border-radius: 16px;
+
+    box-shadow: 0 8px 24px rgba(13, 27, 42, 0.08);
+}
+
+.donation-card h2 {
+    margin-bottom: 8px;
+
+    color: #0d1b2a;
+
+    font-size: 1.5rem;
+}
+
+.donation-card > p {
+    color: #666;
+}
+
+.pix-qr-code {
+    width: 240px;
+    height: 240px;
+
+    margin: 28px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e8ebf0;
+    border-radius: 12px;
+}
+
+.pix-qr-code img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+.pix-instruction {
+    margin-bottom: 25px;
+
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.pix-copy-section {
+    text-align: left;
+}
+
+.pix-copy-section label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #0d1b2a;
+
+    font-weight: 700;
+}
+
+#pix-code {
+    width: 100%;
+    min-height: 105px;
+
+    user-select: text;
+    cursor: text;
+
+    padding: 12px;
+
+    resize: none;
+
+    color: #555;
+
+    background-color: #f8f9fb;
+
+    border: 1px solid #dfe4ea;
+    border-radius: 8px;
+
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+#copy-pix-button {
+    width: 100%;
+
+    margin-top: 14px;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+.copy-message {
+    min-height: 20px;
+
+    margin-top: 10px;
+
+    color: #238636;
+
+    font-size: 0.85rem;
+}
+
+.donation-warning {
+    margin-top: 25px;
+
+    font-size: 0.8rem;
+
+    color: #777;
+}
+
+.mission-support-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.support-secondary-button {
+    display: inline-block;
+
+    padding: 13px 24px;
+
+    color: #0d1b2a;
+
+    background-color: #ffffff;
+
+    border: 1px solid #c8a45d;
+    border-radius: 6px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.support-secondary-button:hover {
+    color: #ffffff;
+
+    background-color: #c8a45d;
+}

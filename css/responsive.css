@@ -1,0 +1,170 @@
+/* IgrejaHub - Responsividade centralizada */
+
+/* ========================================
+   Responsividade
+======================================== */
+
+@media (max-width: 768px) {
+
+    .header-content {
+        min-height: 70px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: var(--color-primary);
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        border-top: 1px solid #344965;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .hero-text {
+        padding: 65px 0 20px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-decoration {
+        width: 100%;
+        height: 180px;
+        margin-bottom: 30px;
+    }
+
+    .decoration-circle {
+        width: 170px;
+        height: 170px;
+    }
+
+    .decoration-circle::before {
+        width: 120px;
+        height: 120px;
+        top: 24px;
+        left: 24px;
+    }
+
+    .decoration-cross {
+        font-size: 75px;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .section h2 {
+        font-size: 30px;
+    }
+
+    .schedule-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    .contact-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 800px) {
+
+    .mission-projects {
+        grid-template-columns: 1fr;
+    }
+
+    .support-content {
+        grid-template-columns: 1fr;
+    }
+
+    .missions-hero h1 {
+        font-size: 2.3rem;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .missions-hero {
+        padding: 70px 5%;
+    }
+
+    .mission-section,
+    .mission-support {
+        padding: 70px 5%;
+    }
+
+    .missions-hero h1 {
+        font-size: 2rem;
+    }
+
+    .mission-photo {
+        height: 220px;
+    }
+}
+
+@media (max-width: 900px) {
+    .missions-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .missions {
+        padding: 70px 5%;
+    }
+
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .missions-grid {
+        grid-template-columns: 1fr;
+    }
+}
