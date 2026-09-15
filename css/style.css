@@ -1,6 +1,7 @@
 /* IgrejaHub - Arquivo principal de estilos
    Mantém os estilos organizados por responsabilidade/página.
 */
+@import url("./theme.css");
 @import url("./base.css");
 @import url("./home.css");
 @import url("./missoes.css");

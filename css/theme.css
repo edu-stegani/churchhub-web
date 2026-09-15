@@ -1,0 +1,68 @@
+/*
+    IgrejaHub
+    Temas / Identidade Visual
+*/
+
+
+/* ========================================
+   Tema padrão - Igreja Batista Maanaim
+   ======================================== */
+
+:root {
+
+    /* Cores principais */
+    --color-primary: #172a46;
+    --color-primary-light: #243d60;
+
+    --color-accent: #d9b878;
+    --color-accent-dark: #b99555;
+
+
+    /* Background */
+    --color-background: #ffffff;
+    --color-background-light: #f5f7fa;
+
+
+    /* Textos */
+    --color-text: #1e293b;
+    --color-text-light: #64748b;
+
+
+    /* Cores auxiliares */
+    --color-white: #ffffff;
+
+
+    /* Tipografia */
+    --font-primary: Arial, Helvetica, sans-serif;
+
+
+    /* Layout */
+    --container-width: 1180px;
+}
+
+
+/* ========================================
+   Tema - Igreja Exemplo
+   ======================================== */
+
+[data-theme="example"] {
+    --color-primary: #5b1378;
+    --color-primary-light: #c424ec;
+    --color-primary: red !important;
+
+    --color-accent: #e4b84a;
+    --color-accent-dark: #c69a32;
+
+    --color-background: #ffffff;
+    --color-background-light: #faf7fc;
+    --color-background: yellow !important;
+
+    --color-text: #29232d;
+    --color-text-light: #756b79;
+
+    --color-white: #ffffff;
+
+    --font-primary: Arial, Helvetica, sans-serif;
+
+    --container-width: 1180px;
+}
